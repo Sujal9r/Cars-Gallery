@@ -1,0 +1,511 @@
+/* Universal Reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/01/vecteezywhite-backgroundfa0421-01_generated-e1656071683973.jpg?resize=150150&ssl=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 20px rgba(0, 41, 112, .1);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.navbar a:hover {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+/* Secondary Navbar Styles */
+.navbar-2 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(110, 104, 104);
+}
+
+.navbar-2-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 35px;
+}
+
+/* Container Styles */
+.container-2 {
+    height: 330px;
+    width: 100%;
+    background-color: #797979;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container-3 {
+    height: 330px;
+    width: 100%;
+    background-color: #49494974;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container-4 {
+    height: 600px;
+    width: 100%;
+    background-color: #00000047;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; /* Center the content */
+    padding: 20px; /* Add padding for spacing */
+    transition: background-color 0.3s ease; /* Add transition for background color */
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/68/50/540/lamborghini-car-vehicle-wallpaper-preview.jpg');
+    background-size: cover; /* Scale the background image to cover the entire container */
+    background-position: center; /* Position the background image in the center */
+    margin-top: 5px; /* Add margin to separate containers */
+}
+
+.container-2-item,
+.container-3-item,
+.container-4-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6,
+.box-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    justify-content: space-evenly;
+    text-align: center;
+    transition: transform 0.5s ease; /* Add transition for hover effect */
+}
+
+.box-1:hover,
+.box-2:hover,
+.box-3:hover,
+.box-4:hover,
+.box-5:hover,
+.box-6:hover,
+.box-7:hover {
+    cursor: pointer;
+    border-radius: 35px;
+    background-color: #ffffff7c;
+    transform: scale(1.1); /* Zoom effect */
+}
+
+/* Banner Styles */
+.Banner1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    cursor: pointer;
+    border-radius: 35px;
+    background-color: #ffffff00;
+    transform: scale(1.1); /* Zoom effect */
+    transition: transform 0.5s ease;
+}
+
+/* Button Styles */
+.button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.button:hover {
+    background-color: #5d5d5d;
+    transform: scale(1.1); /* Zoom effect */
+}
+
+/* Paragraph Styles */
+.container p {
+    color: white;
+    font-size: 18px;
+}
+
+.gallery,
+.MIDSIZE,
+.LUXURY,
+.SPORTY {
+    display: inline-block;
+    margin: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    width: calc(25% - 20px);
+    float: left;
+}
+
+.container1,
+.container2,
+.container3,
+.container4 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.photo-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+
+.photo-description1,
+.photo-description2,
+.photo-description3,
+.photo-description4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(41, 36, 36, 0.5);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.gallery:hover .photo-image,
+.MIDSIZE:hover .photo-image,
+.LUXURY:hover .photo-image,
+.SPORTY:hover .photo-image {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+.gallery:hover .photo-description,
+.MIDSIZE:hover .photo-description,
+.LUXURY:hover .photo-description,
+.SPORTY:hover .photo-description {
+    opacity: 0;
+}
+
+.container1::after,
+.container2::after,
+.container3::after,
+.container4::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-4 {
+    height: 600px;
+    width: 100%;
+    background-color: #00000047;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; /* Center the content */
+    padding: 20px; /* Add padding for spacing */
+    transition: background-color 0.3s ease; /* Add transition for background color */
+    background-image: url('https://getwallpapers.com/wallpaper/full/6/3/0/1096674-black-car-wallpaper-1920x1200-for-full-hd.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+    background-size: cover; /* Scale the background image to cover the entire container */
+    background-position: center; /* Position the background image in the center */
+    }
+
+.container-4 p {
+    color: white;
+    font-size: 18px;
+    margin: 5px 0; /* Add margin for spacing */
+}
+
+.container-4 p:hover {
+    color: #000000; /* Change text color on hover */
+    transition: color 0.3s ease; /* Add transition for text color */
+}
+
+.container-4-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+
+/*api css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #000000;
+    --accent-color-dark: #696969;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 8px;
+}
+
+.company-logo img {
+    width: 120px;
+}
+
+.nav-links ul {
+    gap: 16px;
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color: red;
+}
+
+.nav-item.active {
+    color: var(--accent-color);
+}
+
+.search-bar {
+    height: 32px;
+    gap: 8px;
+}
+
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #000000;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: rgb(0, 0, 0);
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 5 5 4px #000000;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 8px #000000;
+    
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
+
+/* Additions and modifications */
+
+.nav-links ul {
+    gap: 16px;
+    display: flex; /* Ensures the buttons are displayed in a row */
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li:last-child {
+    margin-left: auto; /* Pushes the search bar to the right */
+}
+
+.nav-links li:hover .sub-menu {
+    display: block; /* Display the submenu on hover */
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 4px #bbd0e2;
+    display: none; /* Hide the submenu by default */
+    padding: 8px;
+    z-index: 1;
+}
+
+.sub-menu button {
+    display: block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.sub-menu button:hover {
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+.search-bar {
+    height: 32px;
+    gap: 8px;
+    position: relative;
+}
+
+.search-bar input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.search-bar input:hover {
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+    transform: scale(1.05); /* Zoom in effect on hover */
+}
